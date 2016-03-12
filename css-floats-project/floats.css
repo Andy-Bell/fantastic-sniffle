@@ -1,0 +1,45 @@
+#floats {
+  background: #d41;
+}
+h1{
+  text-align: center;
+  font-size: 36px
+}
+#container{
+  width:80%;
+  margin: 0 auto;
+}
+#floats #container {
+  background: #fff;
+  padding: 20px;
+}
+#brad1{
+  float:left;
+  margin: 0 20px 10px 0;
+}
+
+#mainColumn{
+  width: 60%;
+  float:left;
+  background:#999;
+  padding 2%;
+}
+#sidebar{
+  width:34%;
+  float: right;
+  background: #eee;
+  padding: 2%;
+}
+.clearfix:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+#footer{
+  clear:both;
+  text-align:center;
+  margin:5px 0px;
+  padding: 5px;
+  color:#fff;
+  background: #333;
+}
