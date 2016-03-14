@@ -1,0 +1,88 @@
+#box{
+  background: linear-gradient(120deg,red, blue);
+  height:200px;
+  width:200px;
+  margin:40px auto;
+  padding:50px;
+  box-sizing: border-box;
+  
+  -webkit-border-radius:100px;
+  -moz-border-radius:100px;
+  
+}
+body{
+  background: rgba(25,52,84,1);
+  color:white;
+  
+}
+#container{
+  width:600px;
+  margin: 0 auto;
+  padding:40px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.1);
+  box-shadow: 4px 4px 2px #333;
+  
+}
+
+h1{
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+#columns{
+  width:600px;
+  margin: 0 auto;
+  padding:40px;
+  box-sizing: border-box;
+}
+
+#threecolumns{
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap:50px;
+  -webkit-column-rule-style: solid;
+  -webkit-column-rule-width:1px;
+  
+}
+
+@keyframes box{
+  0% {border-radius: 10px; background-color: white; top:0; left:0;}
+  50%    {border-radius: 100px; background-color: black; top:100px;left: 100px; }
+  100% {border-radius: 10px; background-color: white;top:0; left:0;}
+}
+#animations{
+  height: 400
+  
+}
+
+#newbox{
+  background: red;
+  height:200px;
+  width:200px;
+  margin:40px auto;
+  padding:50px;
+  box-sizing: border-box;
+  position:relative;
+  
+  -webkit-border-radius:100px;
+  -moz-border-radius:100px;
+  animation-name: box;
+  animation-duration: 10s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite
+}
+#box2{
+  background: blue;
+  height:200px;
+  width:200px;
+  position:relative;
+}
+
+#box2:hover{
+  background:red;
+  width:300px;
+  height:300px;
+  transition: all 4s;
+  transition-timing-function: ease-in;
+}
