@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/normalize.css">
+    <link rel="stylesheet" type="text/css" href="temp.css">
+    <!--[if IE]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js>
+      </script>
+    <![endif]-->  
+  
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <h1>Temperature Calculator</h1>
+        <p>A quick converter from one unit to another</p>
+      </header>
+      <div id="calculator">
+        <form>
+          <label>Starting Value
+            <input type="text" id="initial">
+            <select id="startUnit">
+              <option disabled selected value="0">--Choose an Option--</option>
+              <option value="c">Celcius</option>
+              <option value="f">Fahrenheit</option>
+              <option value="k">Kelvin</option>
+            </select>
+          </label>
+          <label>Desired Unit
+            <select id="endUnit">
+              <option disabled selected value="0">--Choose an Option--</option>
+              <option value="c">Celcius</option>
+              <option value="f">Fahrenheit</option>
+              <option value="k">Kelvin</option>    
+            </select>
+          </label>
+          <button type="button" id="calculate">Calculate!</button>
+        </form>
+      </div><!--end calculator-->
+      <div id="product">
+        <span id="value">0</span>&deg;<span id="unit"></span>
+      </div>
+    </div><!--end container-->
+  </body>
+</html>
