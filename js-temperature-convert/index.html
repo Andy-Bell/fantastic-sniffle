@@ -11,28 +11,27 @@
   </head>
 
   <body>
+    <header>
+      <h1>Temperature Calculator</h1>
+      <p>A quick converter from one unit to another</p>
+    </header>
     <div id="container">
-      <header>
-        <h1>Temperature Calculator</h1>
-        <p>A quick converter from one unit to another</p>
-      </header>
+      
       <div id="calculator">
         <form>
-          <label>Starting Value
+          <label>Starting Temperature<br>
             <input type="text" id="initial">
             <select id="startUnit">
-              <option disabled selected value="0">--Choose an Option--</option>
-              <option value="c">Celcius</option>
-              <option value="f">Fahrenheit</option>
-              <option value="k">Kelvin</option>
+              <option selected value="c">&deg;C</option>
+              <option value="f">&deg;F</option>
+              <option value="k">&deg;K</option>
             </select>
           </label>
           <label>Desired Unit
             <select id="endUnit">
-              <option disabled selected value="0">--Choose an Option--</option>
-              <option value="c">Celcius</option>
-              <option value="f">Fahrenheit</option>
-              <option value="k">Kelvin</option>    
+              <option selected value="c">&deg;C</option>
+              <option value="f">&deg;F</option>
+              <option value="k">&deg;K</option>    
             </select>
           </label>
           <button type="button" id="calculate">Calculate!</button>
@@ -42,5 +41,6 @@
         <span id="value">0</span>&deg;<span id="unit"></span>
       </div>
     </div><!--end container-->
+    <script src="script.js"></script>
   </body>
 </html>
