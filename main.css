@@ -6,12 +6,10 @@
 }
 body{
   font-size: 18px;
-  font-family: Georgia,Times,serif;
-  background: #f2f2f2;
-}
-h1,h2,h3{
   font-family: Helvetica,arial,sans-serif;
+  background: #f5f5f5;
 }
+
 
 #container{
   width:760px;
@@ -21,11 +19,11 @@ h1,h2,h3{
 header{
   text-align: center;
   background: #fff;
-  color:#1a71b8;
+  color:#222;
   padding 10px;
 }
 article{
-  background: white;
+  background: #fff;
   padding:20px;
   margin: 20px 0;
   
@@ -35,19 +33,12 @@ article p{
   margin:0 0 1em;
 }
 
-section.post-head small {
-  display:block;
-  margin:0 0 20px;
-  padding:0 0 20px;
-  border-bottom: solid 1px #eee;
-  color: #00c6a0;
-}
-
-section.post-foot{
-  font-size: 14px;
-  border-top: solid 1px #eee;
-  margin:20px 0 0;
-  padding:20px 0 0;
+ul{
+  list-style: none;
+  width: 600px;
+  padding:0;
+  margin:0 auto;
+  
 }
 
 footer{
